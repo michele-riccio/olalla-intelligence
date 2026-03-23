@@ -173,7 +173,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);font-
     <span><strong>Totale</strong> €1.09M spesi</span>
     <span><strong>Dati:</strong> Feb 2023 – Feb 2026</span>
   </div>
-  <a class="hback" href="index.html">← Torna al Report</a>
+  <a class="hback" href="index.html">← Report</a>
+  <a class="hback" href="olalla_brief_v3.html">← Brief Strategico</a>
 </div>
 
 <!-- NAV -->
@@ -414,7 +415,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);font-
     <div class="ct">ROAS mensile Dicembre — il mese più profittevole</div>
     <div class="cs">Ogni dicembre analizzato separatamente</div>
     <div id="q4-dic-detail" style="margin-top:8px"></div>
-    <div class="ins neg" style="margin-top:10px"><div class="it">Dicembre 2024: €74 investiti, ROAS 0x — il mese più profittevole dell'anno completamente ignorato</div><div class="ib">Dicembre 2025: €1.352 investiti → ROAS 36.71x (il più alto del 2025). Dicembre 2023: €2.498 → ROAS 21.89x. Il pattern è costante. Nel 2024 il budget dicembre era quasi zero.</div></div>
+    <div class="ins neg" style="margin-top:10px"><div class="it">Dicembre 2024: €74 investiti, ROAS 0x — dicembre con ROAS eccezionale — non sfruttato strutturalmente</div><div class="ib">Dicembre 2025: €1.352 investiti → ROAS 36.71x (il più alto del 2025). Dicembre 2023: €2.498 → ROAS 21.89x. Il pattern è costante. Nel 2024 il budget dicembre era quasi zero.</div></div>
   </div>
 </div>
 <div class="card" style="margin-top:13px">
@@ -510,7 +511,7 @@ function tbl(el_id, rows, cols){
     {l:'Acquisti Meta 2025',v:fmt(m25.purch),n:'+72% vs 2024',c:'b'},
     {l:'ROAS Meta 2023',v:fmtR(m23.roas),n:'Budget €32k — audience calde',c:'t'},
     {l:'Meta % budget tot 2025',v:'31.5%',n:'Era 11.5% nel 2023',c:'b'},
-    {l:'ROAS Demand Gen',v:'0.46x',n:'€88k sprecati — da eliminare',c:'r'},
+    {l:'ROAS Demand Gen (storico)',v:'0.46x',n:'€88K in 2023-24 — eliminato nel 2025',c:'b'},
   ].map(k=>`<div class="kpi ${k.c}"><div class="kl">${k.l}</div><div class="kv">${k.v}</div><div class="kn">${k.n}</div></div>`).join('');
 
   // Annual charts
@@ -614,7 +615,7 @@ function tbl(el_id, rows, cols){
   document.getElementById('cross-kgrid').innerHTML = [
     {l:'Totale investito',v:fmtE(D.summary.total_spend),n:'Meta+Google 3 anni',c:'b'},
     {l:'BRAND Google ROAS',v:'102.97x',n:'€13.486 → 24.958 conv.',c:'g'},
-    {l:'Demand Gen spreco',v:fmtE(88350),n:'ROAS 0.46x — eliminare',c:'r'},
+    {l:'Demand Gen (2023-24)',v:fmtE(88350),n:'ROAS 0.46x — eliminato nel 2025 ✓',c:'b'},
     {l:'Search % budget',v:'7.9%',n:'ROAS 24.49x — sottoinvestito',c:'y'},
   ].map(k=>`<div class="kpi ${k.c}"><div class="kl">${k.l}</div><div class="kv">${k.v}</div><div class="kn">${k.n}</div></div>`).join('');
 
@@ -909,7 +910,7 @@ filterST();
       <div class="kl">Q4 ${r.year}</div>
       <div class="kv">${fmtR(r.roas)}</div>
       <div class="kn">Spend ${fmtE(r.spend)} · Rev ${fmtE(r.rev)}</div>
-    </div>`).join('')+`<div class="kpi r"><div class="kl">Natale 2025</div><div class="kv">€0</div><div class="kn">ROAS 36.71x con €1.352 — ignorato</div></div>`;
+    </div>`).join('')+`<div class="kpi r"><div class="kl">Natale 2025</div><div class="kv">€0</div><div class="kn">ROAS 36.71× con €1.352 investiti — opportunità 2026</div></div>`;
 
   mkChart('ch-q4-compare','bar',q4.map(r=>String(r.year)),[
     {label:'Spend (€)',data:q4.map(r=>r.spend),backgroundColor:'rgba(37,69,200,.7)',yAxisID:'y',borderRadius:4,borderSkipped:false},

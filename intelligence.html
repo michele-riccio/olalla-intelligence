@@ -190,6 +190,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);font-
     <button class="nb" onclick="sp('adset',this)">⑧ Adset Explorer</button>
     <button class="nb" onclick="sp('search',this)">⑨ Search Terms</button>
     <button class="nb" onclick="sp('q4',this)">⑩ Q4 Analysis</button>
+    <button class="nb" onclick="sp('diagnosi',this)">⑪ Diagnosi & Strategia</button>
   </nav>
 </div>
 
@@ -424,6 +425,142 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);font-
 </div>
 </div>
 
+<!-- ⑪ DIAGNOSI & STRATEGIA -->
+<div class="pg" id="pg-diagnosi">
+<div class="sh">
+  <div class="seyebrow">Diagnosi onesta — cosa i dati dicono davvero</div>
+  <div class="stitle">Diagnosi strutturale & Priorità strategiche</div>
+  <div class="sdesc">I problemi reali e le azioni concrete — basati sui dati, non sulle opinioni</div>
+</div>
+
+<div class="kgrid" style="grid-template-columns:repeat(4,1fr)">
+  <div class="kpi r"><div class="kl">Frequenza max adset</div><div class="kv">26.7×</div><div class="kn">Adset "Maestre" — ad blindness garantita</div></div>
+  <div class="kpi r"><div class="kl">AOV Meta 2026</div><div class="kv">€36.83</div><div class="kn">vs €56.33 nel 2024 — calo del 35%</div></div>
+  <div class="kpi y"><div class="kl">TOFU reale vs DABA</div><div class="kv">0</div><div class="kn">Zero campagne di vera brand awareness</div></div>
+  <div class="kpi g"><div class="kl">Brand Search ROAS</div><div class="kv">128×</div><div class="kn">Chi conosce Olallà torna — il problema è chi non la conosce</div></div>
+</div>
+
+<div class="g2" style="margin-top:13px">
+  <div class="card">
+    <div class="ct">I 4 problemi strutturali</div>
+    <div class="cs">Cause profonde — non sintomi</div>
+    <div style="margin-top:12px">
+      <div style="border-left:3px solid #e05a2b; padding:10px 14px; margin-bottom:10px; background:rgba(224,90,43,0.05)">
+        <div style="font-weight:700; font-size:13px; color:#c73d0a; margin-bottom:4px">1. Meta TOFU è retargeting travestito</div>
+        <div style="font-size:12px; color:#5c5448; line-height:1.6">DABA mostra il catalogo a persone simili a chi ha già comprato — non è awareness, è retargeting allargato. Senza audience genuinamente nuova in ingresso, ogni occasione esaurisce la sua domanda in 1 anno (vedi Maestre: 26×→8×, BOMBO: 21×→10×).</div>
+      </div>
+      <div style="border-left:3px solid #e05a2b; padding:10px 14px; margin-bottom:10px; background:rgba(224,90,43,0.05)">
+        <div style="font-weight:700; font-size:13px; color:#c73d0a; margin-bottom:4px">2. Budget ×14 senza creative nuove</div>
+        <div style="font-size:12px; color:#5c5448; line-height:1.6">[N2A] Structured: €6.6K (2023) → €108.6K (2025). ROAS: 30×→9.4×. Frequenza 26.7 sull'adset Maestre. Ogni raddoppio di budget richiede 30–40% di creative nuove per mantenere l'efficienza — questo non è avvenuto.</div>
+      </div>
+      <div style="border-left:3px solid #a67c2a; padding:10px 14px; margin-bottom:10px; background:rgba(166,124,42,0.05)">
+        <div style="font-weight:700; font-size:13px; color:#8a5c0a; margin-bottom:4px">3. AOV in discesa sistematica</div>
+        <div style="font-size:12px; color:#5c5448; line-height:1.6">€56.33 (2024) → €49.62 (2025) → €36.83 (2026). Con lo stesso CPA ma AOV −35%, il margine reale crolla. Le campagne stanno ottimizzando per volume di ordini, non per valore degli ordini. Senza dati sui margini per categoria, impossibile capire l'impatto reale.</div>
+      </div>
+      <div style="border-left:3px solid #a67c2a; padding:10px 14px; background:rgba(166,124,42,0.05)">
+        <div style="font-weight:700; font-size:13px; color:#8a5c0a; margin-bottom:4px">4. Comunicazione product-push, zero brand recall</div>
+        <div style="font-size:12px; color:#5c5448; line-height:1.6">Tutte le campagne comunicano il prodotto. Nessuna lavora su perché Olallà, sul significato emotivo del regalo personalizzato, sulla memorabilità tra le occasioni. L'utente di Marzo (Papà) non pensa ad Olallà a Settembre (Maestre) — non perché insoddisfatto (94% 5★ Trustpilot), ma perché non c'è nulla che lo mantiene nel consideration set.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ct">Stagionalità reale vs budget allocato</div>
+    <div class="cs">ROAS medio mensile 3 anni vs spesa media — il disallineamento</div>
+    <div id="ch-stagionalita-wrap" style="margin-top:8px"><canvas id="ch-stagionalita"></canvas></div>
+    <div class="ins neg" style="margin-top:10px">
+      <div class="it">Dicembre: ROAS medio 29.3× — budget medio €1.925. Il mese migliore riceve il budget peggiore.</div>
+      <div class="ib">Agosto: ROAS medio 16.8× — budget medio €4.324. Sottoinvestito. Ottobre 2025: €4.390, ROAS 5.1× — budget abbassato troppo presto prima del Q4 ramp-up.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:13px">
+  <div class="ct">Brief creativo — i 3 insight da cui partire</div>
+  <div class="cs">Non comunicare il prodotto. Comunicare il significato.</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:12px">
+    <div style="padding:14px; background:#f5f2eb; border-top:3px solid #14B5B3">
+      <div style="font-weight:700; font-size:12px; color:#003B49; margin-bottom:6px">Insight 1 — "Ti conosco"</div>
+      <div style="font-size:12px; color:#5c5448; line-height:1.6; margin-bottom:8px">Un regalo personalizzato non è un oggetto: è la prova che hai pensato a quella persona specifica. Mostrare il momento di apertura del regalo, non il prodotto.</div>
+      <div style="font-size:11px; color:#14B5B3; font-style:italic">"Non un regalo. Il SUO regalo."</div>
+    </div>
+    <div style="padding:14px; background:#f5f2eb; border-top:3px solid #14B5B3">
+      <div style="font-weight:700; font-size:12px; color:#003B49; margin-bottom:6px">Insight 2 — L'alternativa è banale</div>
+      <div style="font-size:12px; color:#5c5448; line-height:1.6; margin-bottom:8px">"Hai già comprato il solito cesto di cioccolatini?" — confrontare Olallà con l'alternativa nella testa dell'utente, non con i competitor diretti. Più efficace e più onesto.</div>
+      <div style="font-size:11px; color:#14B5B3; font-style:italic">"Quest'anno, qualcosa che ricorderà."</div>
+    </div>
+    <div style="padding:14px; background:#f5f2eb; border-top:3px solid #14B5B3">
+      <div style="font-weight:700; font-size:12px; color:#003B49; margin-bottom:6px">Insight 3 — Resta nel tempo</div>
+      <div style="font-size:12px; color:#5c5448; line-height:1.6; margin-bottom:8px">La personalizzazione crea oggetti che rimangono. "Tra 10 anni ricorderà quel barattolo con il suo nome." La durata è un differenziatore reale vs Amazon e competitor.</div>
+      <div style="font-size:11px; color:#14B5B3; font-style:italic">"I regali Olallà non finiscono nel cassetto."</div>
+    </div>
+  </div>
+</div>
+
+<div class="g2" style="margin-top:13px">
+  <div class="card">
+    <div class="ct">Priorità azioni — in ordine di impatto reale</div>
+    <div id="priority-table" style="margin-top:8px"></div>
+  </div>
+  <div class="card">
+    <div class="ct">TikTok — la risposta onesta</div>
+    <div class="cs">Sì alla valutazione, no all'urgenza</div>
+    <div style="margin-top:12px; font-size:12px; color:#5c5448; line-height:1.7">
+      <strong style="color:#003B49">Il target F 25–44 IT è su TikTok.</strong> CPM stimato €1.50–2.50 vs Meta €2.21 (2025). Sulla carta: opportunità per awareness a costo comparabile.<br><br>
+      <strong style="color:#c73d0a">Ma:</strong> TikTok non accetta il materiale Meta riciclato. Richiede video nativi, format diverso, tone of voice diverso. Se non si ha la capacità produttiva, drena budget senza risultati.<br><br>
+      <strong style="color:#003B49">Priorità:</strong> prima risolvere la saturazione creativa su Meta (frequenza 26.7×, [N2A] ROAS 9.4×), poi valutare TikTok con budget test separato. Non il contrario.
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+// Stagionalità chart data (Meta ROAS medio mensile 3 anni)
+(function(){
+  const months = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+  const roasMedio = [6.0, 15.0, 15.0, 11.0, 16.6, 10.2, 10.6, 16.8, 17.7, 13.4, 11.0, 29.3];
+  const spendMedio = [2738, 3892, 9264, 4863, 20240, 9783, 5252, 4324, 7211, 2632, 4317, 1925];
+  
+  mkChart('ch-stagionalita','bar',months,[
+    {label:'Spend medio (€)',data:spendMedio,backgroundColor:'rgba(20,181,179,0.5)',yAxisID:'y',borderRadius:3,borderSkipped:false},
+    {label:'ROAS medio',data:roasMedio,type:'line',borderColor:'#c73d0a',backgroundColor:'transparent',pointRadius:5,yAxisID:'y2',tension:.3},
+  ],{legend:true,extra:{scales:{
+    x:{grid:{display:false}},
+    y:{position:'left',ticks:{callback:v=>'€'+fmt(v)},grid:{color:'rgba(0,0,0,.04)'}},
+    y2:{position:'right',ticks:{callback:v=>v+'×'},grid:{display:false}}
+  }}});
+
+  // Priority table
+  const priorities = [
+    {n:1, azione:'Brand exclusion PMax',urgenza:'Settimana 1',impatto:'Misurazione pulita',tipo:'fix'},
+    {n:2, azione:'Search → 20% budget Google',urgenza:'Settimane 1–2',impatto:'+€400–600K rev',tipo:'go'},
+    {n:3, azione:'Rinnovare creative (freq >3)',urgenza:'Mensile',impatto:'Riduce saturazione',tipo:'fix'},
+    {n:4, azione:'Q4 struttura completa',urgenza:'Luglio',impatto:'+€150–300K Q4',tipo:'go'},
+    {n:5, azione:'Vera awareness su audience fredda',urgenza:'Mese 2–3',impatto:'Ricostruisce funnel',tipo:'go'},
+    {n:6, azione:'Adset inattivi ROAS >10× (34)',urgenza:'Mese 1–2',impatto:'+€37K/mese stim.',tipo:'go'},
+    {n:7, azione:'Budget stagionale sui dati reali',urgenza:'Subito',impatto:'Ottimizza €380K/anno',tipo:'fix'},
+    {n:8, azione:'GA4 attribuzione data-driven',urgenza:'Mese 1',impatto:'Decisioni non cieche',tipo:'fix'},
+    {n:9, azione:'Insight emotivo nelle creative',urgenza:'Mese 2',impatto:'Brand recall',tipo:'creative'},
+    {n:10, azione:'Uomo 35–44 adset dedicato',urgenza:'Mese 2–3',impatto:'CPM 38% più basso',tipo:'go'},
+  ];
+  
+  const colorMap = {fix:'#a67c2a',go:'#1a6e38',creative:'#14B5B3'};
+  const labelMap = {fix:'Ottimizza',go:'Scala',creative:'Creatività'};
+  
+  document.getElementById('priority-table').innerHTML = `<table class="tbl"><thead><tr>
+    <th>#</th><th>Azione</th><th>Quando</th><th>Impatto atteso</th><th>Tipo</th>
+  </tr></thead><tbody>${priorities.map(p=>`<tr>
+    <td style="font-weight:700;color:#14B5B3">${p.n}</td>
+    <td style="font-weight:600">${p.azione}</td>
+    <td style="font-size:11px;color:#8c8478">${p.urgenza}</td>
+    <td style="font-size:11px">${p.impatto}</td>
+    <td><span class="badge" style="background:${colorMap[p.tipo]}20;color:${colorMap[p.tipo]}">${labelMap[p.tipo]}</span></td>
+  </tr>`).join('')}</tbody></table>`;
+})();
+</script>
+
+
 <script>
 // ══════════════════════════════════════════════════════════════
 // DATA (embedded)
@@ -511,7 +648,7 @@ function tbl(el_id, rows, cols){
     {l:'Acquisti Meta 2025',v:fmt(m25.purch),n:'+72% vs 2024',c:'b'},
     {l:'ROAS Meta 2023',v:fmtR(m23.roas),n:'Budget €32k — audience calde',c:'t'},
     {l:'Meta % budget tot 2025',v:'31.5%',n:'Era 11.5% nel 2023',c:'b'},
-    {l:'ROAS Demand Gen (storico)',v:'0.46x',n:'€88K in 2023-24 — eliminato nel 2025',c:'b'},
+    {l:'Demand Gen (2023-2024)',v:'0.46x',n:'✓ Eliminato nel 2025 — €88K recuperati',c:'g'},
   ].map(k=>`<div class="kpi ${k.c}"><div class="kl">${k.l}</div><div class="kv">${k.v}</div><div class="kn">${k.n}</div></div>`).join('');
 
   // Annual charts
@@ -615,7 +752,7 @@ function tbl(el_id, rows, cols){
   document.getElementById('cross-kgrid').innerHTML = [
     {l:'Totale investito',v:fmtE(D.summary.total_spend),n:'Meta+Google 3 anni',c:'b'},
     {l:'BRAND Google ROAS',v:'102.97x',n:'€13.486 → 24.958 conv.',c:'g'},
-    {l:'Demand Gen (2023-24)',v:fmtE(88350),n:'ROAS 0.46x — eliminato nel 2025 ✓',c:'b'},
+    {l:'Demand Gen (2023-2024)',v:fmtE(88350),n:'ROAS 0.46x — ✓ Eliminato nel 2025',c:'g'},
     {l:'Search % budget',v:'7.9%',n:'ROAS 24.49x — sottoinvestito',c:'y'},
   ].map(k=>`<div class="kpi ${k.c}"><div class="kl">${k.l}</div><div class="kv">${k.v}</div><div class="kn">${k.n}</div></div>`).join('');
 
@@ -638,7 +775,7 @@ function tbl(el_id, rows, cols){
     {label:'Conversioni',key:'conv',cls:'num',fn:r=>fmt(r.conv,1)},
     {label:'CPA',key:'cpa',cls:'num',fn:r=>fmtE(r.cpa,2)},
     {label:'% budget',key:'spend',cls:'num',fn:r=>`${(r.spend/D.summary.google_total_spend*100).toFixed(1)}%`},
-    {label:'Azione',key:'type',fn:r=>r.roas<1?'<span class="badge br">Eliminare</span>':r.roas>=15?'<span class="badge bg">Scalare</span>':r.type==='Search'?'<span class="badge bg">+Budget</span>':'<span class="badge bb">Monitorare</span>'},
+    {label:'Azione',key:'type',fn:r=>r.type==='Demand Gen'?'<span class="badge bb">✓ Eliminato 2025</span>':r.roas<1?'<span class="badge br">Ottimizzare</span>':r.roas>=15?'<span class="badge bg">Scalare</span>':r.type==='Search'?'<span class="badge bg">↑ +Budget</span>':'<span class="badge bb">Monitorare</span>'},
   ]);
 })();
 
@@ -779,7 +916,7 @@ function populateCampFilters(){
 
 function renderCampTbl(rows){
   document.getElementById('camp-count').textContent = rows.length+' campagne';
-  tbl('camp-tbl',rows.map(r=>({...r,_hl:r.roas>=20?'hl-g':r.roas<3&&r.spend>1000?'hl-r':''})),[
+  tbl('camp-tbl',rows.map(r=>({...r,_hl:r.roas>=20?'hl-g':r.roas<3&&r.spend>1000&&r.type!=='Demand Gen'?'hl-r':''})),[
     {label:'Campagna',fn:r=>`<span style="max-width:260px;display:block;overflow:hidden;text-overflow:ellipsis" title="${r.name}">${r.name}</span>`},
     {label:'Occasione',fn:r=>`<span class="badge ${roas_badge(r.roas)}">${r.occ}</span>`},
     {label:'Spend',cls:'num',fn:r=>fmtE(r.spend)},
